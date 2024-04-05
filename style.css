@@ -105,3 +105,12 @@ body{
     box-shadow: none;
     transform: translateY(5px);
 }
+
+@media screen and (max-width:725px){
+    .left{
+        display: none;
+    }
+    .right{
+        width: 100vw;
+    }
+}
