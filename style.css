@@ -3,22 +3,40 @@
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
+    overflow: hidden;
 }
 
 body{
-    background: url(background.jpg) no-repeat;
     background-position: center;
     background-size: cover;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    text-align: center;
     min-height: 100vh;
 }
 
+.right{
+    background-image: url(laayoune.jpg);
+    background-size: 100vw;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 50vw;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left{
+    background-image: url(login-illustration.jpg);
+    background-size: contain;
+    height: 100vh;
+    width: 50vw;
+    float: left;
+}
+
+
 .wrapper{
     border: 1px solid white;
-    border-radius: 30px;
+    border-radius: 5px;
     padding: 0 50px;
     width: 300px;
     background: transparent;
@@ -27,6 +45,7 @@ body{
 .wrapper h1{
     color: #fff;
     margin: 10px 0;
+    text-align: center;
 }
 
 .wrapper .inputBox{
@@ -50,6 +69,7 @@ body{
 .inputBox input{
     outline: none;
     color: #fff;
+    border-radius: 5px;
 }
 
 .submitButton{
@@ -69,10 +89,10 @@ body{
     border: none;
     box-shadow: 0px 5px #8b8b8b;
     background-color: #fff;
-    transition: transform 0.1s ease-in-out;
 }
 
 
 .submitButton button:active{
+    box-shadow: none;
     transform: translateY(5px);
 }
