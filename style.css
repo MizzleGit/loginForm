@@ -13,7 +13,7 @@ body{
 }
 
 .right{
-    background-image: url(laayoune.jpg);
+    background-image: url(sahara.jpg);
     background-size: 100vw;
     background-position-y: center;
     background-repeat: no-repeat;
@@ -26,17 +26,26 @@ body{
 }
 
 .left{
-    background-image: url(login-illustration.jpg);
-    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     width: 50vw;
     float: left;
+}
+
+.left #illus{
+    width: 50vw;
+    height: auto;
+    position: absolute;
 }
 
 
 .wrapper{
     border: 1px solid white;
     border-radius: 5px;
+    min-width: 300px;
     padding: 0 50px;
     width: 300px;
     background: transparent;
